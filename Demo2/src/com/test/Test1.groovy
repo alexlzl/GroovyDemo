@@ -30,7 +30,8 @@ class Test1 {
         println result
         closure3("默认参数it");
         testList()
-        testList1()
+        testMap1()
+        testMap2()
     }
 
     //方法定义1=================
@@ -100,7 +101,7 @@ class Test1 {
         println test.toString()
     }
     //Map的使用
-    static def testList1() {
+    static def testMap1() {
         def emptyMap = [:]
         def test = ["id": 1, "name": "renyugang", "isMale": true]
         test["id"] = 2
@@ -108,5 +109,18 @@ class Test1 {
         println test.id
         println test.isMale
         println(test.toString())
+    }
+
+    static def testMap2(){
+        def emptyMap = [:]
+        def test = ["id":1, "name":"renyugang", "isMale":true]
+
+        test.each { key, value ->
+            println "two parameters, find [${key} : ${value}]"
+        }
+
+        test.each {
+            println "one parameters, find [${it.key} : ${it.value}]"
+        }
     }
 }
