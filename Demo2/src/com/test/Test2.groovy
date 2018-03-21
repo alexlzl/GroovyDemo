@@ -96,4 +96,20 @@ class Test2 {
         assert a == b
 
     }
+
+    /**
+     * 在Groovy中，非空判断可以用?表达式，比如：
+     */
+    static def test3() {
+//        if (order != null) {
+//            if (order.getCustomer() != null) {
+//                if (order.getCustomer().getAddress() != null) {
+//                    System.out.println(order.getCustomer().getAddress());
+//                }
+//            }
+//        }
+//
+//        可以简写为：
+//        println order?.customer?.address
+    }
 }
