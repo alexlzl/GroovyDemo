@@ -99,6 +99,9 @@ class Test1 {
         test << 200//List还有一种看起来很奇怪的操作符<<，其实这并没有什么大不了，左移位表示向List中添加新元素的意思
         println test.size
         println test.toString()
+        test.each {
+            println("遍历list==="+it)
+        }
     }
     //Map的使用
     static def testMap1() {
