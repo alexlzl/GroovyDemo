@@ -49,7 +49,7 @@ class ClosureTest {
     def scriptClosure = {
         println "scriptClosure this:" + this
         println "scriptClosure owner:" + owner
-        println "scriptClosure delegate:" + delegate
+        println "scriptClosure delegate:" + delegate.getClass()
     }
 
 }

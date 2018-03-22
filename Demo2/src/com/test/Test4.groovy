@@ -14,10 +14,11 @@ class Test4 {
         /**
          * 测试闭包代理
          */
+        ClosureTest closureTest=new ClosureTest()
         println "before setDelegate()"
-        new ClosureTest().scriptClosure.call()
-        new ClosureTest().scriptClosure.setDelegate("abc")
+        closureTest.scriptClosure.call()
+        closureTest.scriptClosure.setDelegate(new PersonBean())
         println "after setDelegate()"
-        new ClosureTest().scriptClosure.call()
+        closureTest.scriptClosure.call()
     }
 }
