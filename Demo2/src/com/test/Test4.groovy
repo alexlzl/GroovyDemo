@@ -20,5 +20,7 @@ class Test4 {
         closureTest.scriptClosure.setDelegate(new PersonBean())
         println "after setDelegate()"
         closureTest.scriptClosure.call()
+        PersonBean personBean=   closureTest.scriptClosure.delegate
+        personBean.test()
     }
 }

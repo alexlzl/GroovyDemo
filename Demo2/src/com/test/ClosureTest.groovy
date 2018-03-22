@@ -52,4 +52,8 @@ class ClosureTest {
         println "scriptClosure delegate:" + delegate.getClass()
     }
 
+    def methodTest(){
+        println("代理前的对象方法")
+    }
+
 }
