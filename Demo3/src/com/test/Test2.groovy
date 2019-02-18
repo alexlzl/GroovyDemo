@@ -1,5 +1,7 @@
 package com.test
-
+/**
+ * groovy
+ */
 class Test2 {
     static void main(String[] args) {
 //        test()
