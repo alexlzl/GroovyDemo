@@ -70,7 +70,7 @@ class Test1 {
      * 闭包定义======================
      */
     //声明了参数类型
-    static def closure = { int a, String b ->
+    static def closure ={ int a, String b ->
         println "a=${a}, b=${b}, I am a closure!"
     }
 
